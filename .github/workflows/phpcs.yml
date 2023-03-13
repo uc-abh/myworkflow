@@ -20,7 +20,7 @@ jobs:
         run: composer global require "squizlabs/php_codesniffer=*"
 
       - name: Run PHPCS
-        run: phpcs
+        run: phpcs --standard=PSR2 /
 
       - name: Install PHPCBF
         run: composer global require "squizlabs/php_codesniffer=*"
