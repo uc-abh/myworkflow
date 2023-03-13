@@ -26,4 +26,4 @@ jobs:
         run: composer global require "squizlabs/php_codesniffer=*"
 
       - name: Run PHPCBF
-        run: phpcbf
+        run: phpcbf --standard=PSR2 index.php
